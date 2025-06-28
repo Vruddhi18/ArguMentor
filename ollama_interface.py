@@ -1,7 +1,7 @@
 import subprocess
 import json
 
-def query_ollama(prompt, model="mistral"):
+def query_ollama(prompt, model="phi3"):
     result = subprocess.run(
         ["ollama", "run", model],
         input=prompt.encode(),
